@@ -1,6 +1,8 @@
 package model;
 
-public class Product {
+import java.io.Serializable;
+
+public class Product implements Serializable {
     private double code;
     private String name;
     private double price;
@@ -61,11 +63,11 @@ public class Product {
     @Override
     public String toString() {
         return "Product{" +
-                "code=" + code +
-                ", name='" + name + '\'' +
-                ", price=" + price +
-                ", quantyti=" + quantyti +
-                ", description='" + description + '\'' +
+                "Mã sản phẩm=" + code +
+                ", Tên sản phẩm='" + name + '\'' +
+                ", Giá sản phẩm=" + price +
+                ", Số lượng=" + quantyti +
+                ", Miêu tả sản phẩm='" + description + '\'' +
                 '}';
     }
 }
